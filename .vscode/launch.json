@@ -5,7 +5,8 @@
       "type": "java",
       "name": "Debug Main",
       "request": "launch",
-      "mainClass": "com.study.Main"
+      "mainClass": "com.study.Main",
+      "projectName": "debugging-study"
     }
   ]
 }

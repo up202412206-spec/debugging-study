@@ -1,16 +1,30 @@
 {
-  "name": "Java Debugging Study",
-  "image": "mcr.microsoft.com/devcontainers/java:1-21",
+  "name": "Java Maven Codespace",
+  "image": "mcr.microsoft.com/devcontainers/java:0-11",
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "true",
+      "installGradle": "false"
+    }
+  },
+
+  "mounts": [
+    "source=${localWorkspaceFolder}/.m2,target=/root/.m2,type=bind,consistency=cached"
+  ],
 
   "customizations": {
     "vscode": {
       "extensions": [
         "vscjava.vscode-java-pack",
-        "vscjava.vscode-java-debug",
-        "vscjava.vscode-maven"
+        "vscjava.vscode-maven",
+        "redhat.java"
       ]
     }
   },
 
-  "postCreateCommand": "mvn clean compile"
+  "postCreateCommand": "mvn -q -DskipTests=true clean compile",
+
+  "postStartCommand": "bash $HOME/.devcontainer/time-tracker.sh"
 }
