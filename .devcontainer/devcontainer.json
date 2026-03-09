@@ -21,7 +21,13 @@
         "vscjava.vscode-java-pack",
         "vscjava.vscode-maven",
         "redhat.java"
-      ]
+      ],
+      "settings": {
+        "chat.enabled": false,
+        "chat.agent.enabled": false,
+        "chat.commandCenter.enabled": false,
+        "github.copilot.chat.enabled": false
+      }
     }
   },
 
