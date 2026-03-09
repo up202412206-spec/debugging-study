@@ -1,0 +1,30 @@
+{
+  "name": "Java Maven Codespace",
+  "image": "mcr.microsoft.com/devcontainers/java:1-11",
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "true",
+      "installGradle": "false"
+    },
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
+  },
+
+  "mounts": [
+    "source=${localWorkspaceFolder}/.m2,target=/root/.m2,type=bind,consistency=cached"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-maven",
+        "redhat.java"
+      ]
+    }
+  },
+
+  "postCreateCommand": "mvn -q -DskipTests=true clean compile",
+  "postStartCommand": "bash time-tracker.sh"
+}
