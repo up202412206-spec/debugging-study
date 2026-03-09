@@ -22,12 +22,20 @@
         "vscjava.vscode-maven",
         "redhat.java"
       ],
-      "settings": {
+            "settings": {
         "chat.enabled": false,
         "chat.agent.enabled": false,
         "chat.commandCenter.enabled": false,
-        "github.copilot.chat.enabled": false
+        "chat.editor.enabled": false,
+        "chat.search.enabled": false,
+        "chat.sidebar.enabled": false,
+        "chat.statusbar.enabled": false,
+        "chat.trial.enabled": false,
+        "github.copilot.chat.enabled": false,
+        "workbench.experimental.chat.enabled": false,
+        "workbench.action.chat.open": false
       }
+
     }
   },
 
