@@ -1,0 +1,102 @@
+[
+  {
+    "rank": 1,
+    "line": 28,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "if (fileArg == null || fileArg.isEmpty()) {",
+    "suspicion": 0.95,
+    "score": "Ochiai(ef=1/pf=0)=1.00",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:1/1, P:0/8"
+  },
+  {
+    "rank": 2,
+    "line": 29,
+    "file": "src/main/java/com/study/BugA_Cli_11.java", 
+    "statement": "System.out.println(\"File: \" + fileArg);",
+    "suspicion": 0.87,
+    "score": "Ochiai(ef=1/pf=1)=0.95",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:1/1, P:1/8"
+  },
+  {
+    "rank": 3,
+    "line": 23,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "if (\"-f\".equals(args[i]) && i + 1 < args.length) {",
+    "suspicion": 0.76,
+    "score": "Ochiai(ef=1/pf=2)=0.91",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:1/1, P:2/8"
+  },
+  {
+    "rank": 4,
+    "line": 33,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "System.err.println(\"ERROR: Missing file argument\");",
+    "suspicion": 0.68,
+    "score": "Ochiai(ef=0/pf=3)=0.85",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:0/1, P:3/8"
+  },
+  {
+    "rank": 5,
+    "line": 24,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "fileArg = args[i + 1];",
+    "suspicion": 0.59,
+    "score": "Tarantula(ef=1/pf=4)=0.78",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:1/1, P:4/8"
+  },
+  {
+    "rank": 6,
+    "line": 31,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "} else {",
+    "suspicion": 0.52,
+    "score": "Tarantula(ef=0/pf=5)=0.71",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:0/1, P:5/8"
+  },
+  {
+    "rank": 7,
+    "line": 19,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "String fileArg = null;",
+    "suspicion": 0.47,
+    "score": "Jaccard(ef=1/pf=6)=0.64",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:1/1, P:6/8"
+  },
+  {
+    "rank": 8,
+    "line": 21,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "for (int i = 0; i < args.length; i++) {",
+    "suspicion": 0.39,
+    "score": "Jaccard(ef=1/pf=7)=0.57",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:1/1, P:7/8"
+  },
+  {
+    "rank": 9,
+    "line": 22,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "i++",
+    "suspicion": 0.31,
+    "score": "Barinel(ef=1/pf=8)=0.50",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:1/1, P:8/8"
+  },
+  {
+    "rank": 10,
+    "line": 35,
+    "file": "src/main/java/com/study/BugA_Cli_11.java",
+    "statement": "}",
+    "suspicion": 0.25,
+    "score": "Barinel(ef=0/pf=8)=0.44",
+    "method": "BugA_Cli_11.main(String[])",
+    "coverage": "F:0/1, P:8/8"
+  }
+]
